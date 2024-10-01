@@ -1,0 +1,3 @@
+SELECT SUM(SF1_FY),SUM(SF2_FY),SUM(SF1_FY)+SUM(SF2_FY)
+FROM irm-fin-acct-dp-prod.IYR_Process.Trackers_In
+WHERE Region is not null
