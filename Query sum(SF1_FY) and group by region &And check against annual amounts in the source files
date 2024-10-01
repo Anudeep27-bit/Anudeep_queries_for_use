@@ -1,0 +1,3 @@
+SELECT Region,sum(IFNULL(Jan,0)+IFNULL(Feb,0)+IFNULL(Mar,0)+IFNULL(Apr,0)+IFNULL(May,0)+IFNULL(Jun,0)+IFNULL(Jul,0)+IFNULL(Aug,0)+IFNULL(Sep,0)+IFNULL(Oct,0)+IFNULL(Nov,0)+IFNULL(Dec,0)) AS sum_months, SUM(FY) as FY
+FROM irm-fin-acct-dp-prod.IYR_Process.Fcst_Prior_Clean
+GROUP BY Region
